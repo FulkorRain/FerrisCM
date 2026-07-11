@@ -10,7 +10,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "IM Fell English";
 }
 
 a {
@@ -20,27 +19,36 @@ a {
 
 body {
     background:#090506;
+    background-color: radial-gradient(circle at 80% 20%, #2a0808 0%, #080303 60%, #000000 100%);
     color: #fff3eb;
+    font-family: "IM Fell English";
 }
 
 ul {
     list-style: none;
 }
 
+.hero {
+    text-align: center;
+    margin-top: 40px;
+}
+
 .main-text {
     font-family: "Cinzel Decorative";
+    font-size: 9rem;
 }
 
 .navbar {
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    padding:0 60px;
 }
 
 .navbar ul {
-    display: flex;
-    gap: 20px;
+    display:flex;
+    gap:55px;
     align-items: center;
 }
 
@@ -57,3 +65,23 @@ ul {
 .status-main-text {
     font-family: "Cinzel Decorative";
 }
+
+.grid-wrapper {
+    display:grid;
+
+    grid-template-columns: 
+    350px
+    1fr
+    350px;
+    
+    margin-top: 40px;
+    padding: 0 70px;
+}
+
+.left-grid {
+    display: flex;
+    flex-direction: column;
+
+    gap: 80px;
+}
+
