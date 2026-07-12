@@ -18,8 +18,7 @@ a {
 }
 
 body {
-    background:#090506;
-    background-color: radial-gradient(circle at 80% 20%, #2a0808 0%, #080303 60%, #000000 100%);
+    background: radial-gradient(circle at 80% 20%, #2a0808 0%, #080303 60%, #000000 100%);
     color: #fff3eb;
     font-family: "IM Fell English";
 }
