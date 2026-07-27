@@ -2,85 +2,212 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 
-/* "Cinzel Decorative" */
- /* "IM Fell English" */
-/* "IM Fell English SC" */
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: #fff3eb;
+body {
+    background: radial-gradient(circle at 50% 30%, #1c0507 0%, #080203 60%, #030101 100%);
+    color: #e6dad1;
+    font-family: "IM Fell English", serif;
+    min-height: 100vh;
+    padding-bottom: 50px;
 }
 
-body {
-    background: radial-gradient(circle at 80% 20%, #2a0808 0%, #080303 60%, #000000 100%);
-    color: #fff3eb;
-    font-family: "IM Fell English";
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 ul {
     list-style: none;
 }
 
-.hero {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.main-text {
-    font-family: "Cinzel Decorative";
-    font-size: 9rem;
-}
-
 .navbar {
-    height: 70px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 60px;
+    padding: 0 60px;
 }
 
-.navbar ul {
-    display:flex;
-    gap:55px;
-    align-items: center;
-}
-
-.navbar .updates {
+.updates {
     display: flex;
-    gap: 20px;
     align-items: center;
+    gap: 8px;
+    color: #a82e3e;
+    font-family: "IM Fell English SC", serif;
+}
+
+.updates-text {
+    border-bottom: 1px solid #5a121c;
+    border-top: 1px solid #5a121c;
+    padding: 6px 0px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 45px;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 0.95rem;
+    letter-spacing: 1.5px;
+    color: #c4b5a5;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 25px;
+    color: #8c7b70;
+    cursor: pointer;
+}
+
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+    margin-top: 50px;
+}
+
+
+.hero {
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.title-container {
+    display: inline-block;
+    position: relative;
+}
+
+.super-text {
+    position: absolute;
+    top: -25px;
+    right: 15px;
+    font-family: "Cinzel Decorative", serif;
+    color: #851c2a;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.main-text {
+    font-family: "Cinzel Decorative", serif;
+    font-size: 8.5rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #e8ded5;
+    line-height: 1;
+}
+
+.main-text .highlight {
+    color: #9c1e2f;
+}
+
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    align-items: start;
+}
+
+.left-colum {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.lore-text {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #c9bcaf;
+    max-width: 400px;
+}
+
+.stats-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.stats-main-text {
+    font-family: "Cinzel Decorative", serif;
+    font-size: 2.2rem;
+    color: #ded3c8;
+}
+
+.stats-sub-text {
+    font-family: "IM Fell English", serif;
+    font-size: 1.1rem;
+    color: #73645a;
+    margin-top: -2px;
+}
+
+.right-colum {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 60px;
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 12px;
+    max-width: 380px;
+}
+
+.genre-border {
+    border: 1px solid #5e1420;
+    color: #8a2432;
+    padding: 6px 22px;
+    border-radius: 20px;
+    font-family: "IM Fell English", serif;
+    font-size: 1rem;
 }
 
 .buttons {
-    font-family: "IM Fell English SC";
-}
-
-.status-main-text {
-    font-family: "Cinzel Decorative";
-}
-
-.grid-wrapper {
-    display:grid;
-
-    grid-template-columns: 
-    350px
-    1fr
-    350px;
-    
-    margin-top: 40px;
-    padding: 0 70px;
-}
-
-.left-grid {
     display: flex;
     flex-direction: column;
-
-    gap: 80px;
+    gap: 16px;
+    width: 280px;
 }
 
+.button {
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 30px;
+    font-family: "IM Fell English SC", serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.primary-button {
+    background-color: #800a1d;
+    color: #f7ede2;
+    box-shadow: 0 0 15px rgba(128, 10, 29, 0.4);
+}
+
+.primary-button:hover {
+    background-color: #a11029;
+}
+
+.secondary-button {
+    border: 1px solid #800a1d;
+    color: #800a1d;
+    background: transparent;
+}
+
+.secondary-button:hover {
+    background: rgba(128, 10, 29, 0.15);
+}

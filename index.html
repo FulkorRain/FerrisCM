@@ -4,81 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nevermourn</title>
-    <link rel = "stylesheet" href = "index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <nav class = "navbar">
-        <div class = "updates">
-            <img alt = "notification">
-            <p>Recent Update:</p>
+    <nav class="navbar">
+        <div class="updates">
+            <span class="updates-icon">bell-icon</span>
+            <p class = "updates-text">New chapter updated: (Text)</p>
         </div>
 
-        <ul>
-            <li>Synopsis</li>
-            <li>Lore</li>
-            <li>Characters</li>
-            <li>Gallery</li>
-            <li>About</li>
+        <ul class="nav-links">
+            <li><a href="#">Synopsis</a></li>
+            <li><a href="#">Lore</a></li>
+            <li><a href="#">Characters</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
         </ul>
 
-        <ul>
-            <li><img alt = "search"></li>
-            <li><img alt = "email"></li>
-            <li><img alt = "profile"></li>
+        <ul class="nav-icons">
+            <li>search-icon</li>
+            <li>email-icon</li>
+            <li>profile-icon</li>
         </ul>
     </nav>
 
-    <main>
-        <div class = "hero">
-            <p class = "super-text">EST. IN DARKNESS</p>
-            <h1 class="main-text">NEVER<span style="color: #9c1e2f;">MOURN</span></h1>
+    <main class="container">
+        <div class="hero">
+            <div class="title-container">
+                <span class="super-text">EST. IN DARKNESS</span>
+                <h1 class="main-text">NEVER<span class="highlight">MOURN</span></h1>
+            </div>
         </div>
 
-        <div class = "grid-wrapper">
-            <div class = "left-grid">
+        <div class="content-grid">
+            <div class="left-colum">
+                <p class="lore-text">
+                    Death is dead—and her corpse is the<br>
+                    only ground left to stand on.
+                </p>
 
-                <div class = "lore-text">
-                    <p>Death is dead—and her corpse is the
-                    only ground left to stand on.</p>
+                <div class="stats-list">
+                    <div class="stats-item">
+                        <p class="stats-main-text">XII</p>
+                        <p class="stats-sub-text">Chapters</p>
+                    </div>
+                    <div class="stats-item">
+                        <p class="stats-main-text">~180K</p>
+                        <p class="stats-sub-text">Words</p>
+                    </div>
+                    <div class="stats-item">
+                        <p class="stats-main-text">ONGOING</p>
+                        <p class="stats-sub-text">stats</p>
+                    </div>
                 </div>
-                <div class = "status-text">
-                    <ul>
-                        <li>
-                            <p class = "status-main-text">XII</p>
-                            <p class = "status-sub-text">Chapters</p>
-                        </li>
-                        <li>
-                            <p class = "status-main-text">~180K</p>
-                            <p class = "status-sub-text">Words</p>
-                        </li>
-                        <li>
-                            <p class = "status-main-text">ONGOING</p>
-                            <p class = "status-sub-text">Status</p>
-                        </li>
-                    </ul>
-                </div>
-
             </div>
 
-            <div class = "right-grid">
-
-                <div class = "genres">
-                    <ul>
-                        <li>Gore</li>
-                        <li>Dark Fantasy</li>
-                        <li>Horror</li>
-                        <li>Mythology</li>
-                        <li>Slow Burn</li>
-                    </ul>
-                </div>
-                <div class = "buttons">
-                    <a class = "first-button" href = "#">Unearth The Tale</a>
-                    <a class = "second-button" href = "#">Read The Synopsis</a>
+            <div class="right-colum">
+                <div class="genres">
+                    <span class="genre-border">Gore</span>
+                    <span class="genre-border">Dark Fantasy</span>
+                    <span class="genre-border">Horror</span>
+                    <span class="genre-border">Mythology</span>
+                    <span class="genre-border">Slow Burn</span>
                 </div>
 
+                <div class="buttons">
+                    <a class="button primary-button" href="#">UNEARTH THE TALE</a>
+                    <a class="button secondary-button" href="#">READ THE SYNOPSIS</a>
+                </div>
             </div>
         </div>
     </main>
-
 </body>
 </html>
