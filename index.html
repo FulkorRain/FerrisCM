@@ -5,14 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nevermourn</title>
     <link rel="stylesheet" href="index.css">
+    <script src = "javascript/overlay.js" defer></script>
+
+     <style>
+        /* OVERLAY STYLES */
+        #modular-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffff88;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            text-align: center;
+            font-family: "Comic Sans MS", "Chalkboard SE", cursive;
+        }
+
+        #modular-overlay h1 {
+            color: #1e90ff;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        #modular-overlay .overlay-img {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        #modular-overlay .overlay-text {
+            max-width: 600px;
+            font-size: 1.2rem;
+            color: #000080;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+
+        #overlay-button {
+            background: #ffff88;
+            border: 2px solid #ff00ff;
+            border-radius: 15px;
+            padding: 10px 40px;
+            font-size: 3.5rem;
+            cursor: pointer;
+            font-family: inherit;
+            transition: transform 0.1s;
+        }
+
+        #overlay-button:active {
+            transform: scale(0.95);
+        }
+
+        .content-hidden {
+            display: none !important;
+        }
+        
+        .no-scroll {
+            overflow: hidden;
+        }
+        /* OVERLAY STYLES */
+    </style>
 </head>
-<body>
+<body class = "no-scroll">
+    <section id = "modular-overlay" data-version="v1">
+        <h1>Test</h1>
+        <button id = "overlay-button">Enter</button>
+    </section>
+
     <nav class="navbar">
         <div class="updates">
             <span class="updates-icon">bell-icon</span>
             <p class = "updates-text">New chapter updated: (Text)</p>
-        </div>
-
+        </div>  
         <ul class="nav-links">
             <li><a href="#">Synopsis</a></li>
             <li><a href="#">Lore</a></li>
