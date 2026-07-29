@@ -15,44 +15,45 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #ffff88;
+            background-color: #0a0608;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             z-index: 10000;
             text-align: center;
-            font-family: "Comic Sans MS", "Chalkboard SE", cursive;
+            font-family: "IM Fell English", serif;
         }
 
         #modular-overlay h1 {
-            color: #1e90ff;
+            color: #9b1d30;
             font-size: 3rem;
             margin-bottom: 20px;
         }
 
-        #modular-overlay .overlay-img {
-            width: 200px;
-            margin-bottom: 20px;
+        #modular-overlay img {
+            margin-bottom: 10px;
         }
 
         #modular-overlay .overlay-text {
             max-width: 600px;
             font-size: 1.2rem;
-            color: #000080;
+            color: #d3c5bc;
             margin-bottom: 30px;
             padding: 0 20px;
         }
 
         #overlay-button {
-            background: #ffff88;
-            border: 2px solid #ff00ff;
-            border-radius: 15px;
-            padding: 10px 40px;
-            font-size: 3.5rem;
+            background: #68101c;
+            border: 0px solid #68101c;
+            border-radius: 25px;
+            padding: 5px 40px;
+            font-size: 2rem;
+            letter-spacing: 4px;
             cursor: pointer;
             font-family: inherit;
             transition: transform 0.1s;
+            color:#d3c5bc;
         }
 
         #overlay-button:active {
@@ -71,8 +72,10 @@
 </head>
 <body class = "no-scroll">
     <section id = "modular-overlay" data-version="v1">
-        <h1>Test</h1>
-        <button id = "overlay-button">Enter</button>
+        <h1>CONTENT <BR> WARNING</h1>
+        <img src ="assets/Screenshot_8.png">
+        <p class = "overlay-text">The site may contain materials that are disturbing for some audiences</p>
+        <button id = "overlay-button">I understand</button>
     </section>
 
     <nav class="navbar">
